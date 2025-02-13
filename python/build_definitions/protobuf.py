@@ -23,8 +23,8 @@ class ProtobufDependency(Dependency):
     def __init__(self) -> None:
         super(ProtobufDependency, self).__init__(
             'protobuf',
-            '3.5.1-yb-1',
-            'https://github.com/yugabyte/protobuf/archive/refs/tags/v{0}.tar.gz',
+            '21.12-yb-1',
+            'https://github.com/es1024/yb-protobuf/archive/refs/tags/v{0}.tar.gz',
             BuildGroup.POTENTIALLY_INSTRUMENTED)
         self.copy_sources = True
         self.extra_downloads = [
